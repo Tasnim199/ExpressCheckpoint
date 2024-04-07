@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+    form {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+    </style>
+</head>
+<body>
+    <nav>
+       
+            <a href="http://localhost:2000">Home</a>
+            <a href="http://localhost:2000/contact">Our Services</a>
+            <a href="http://localhost:2000/contact">Contact Us</a>
+    </nav>
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Feel free to contact us using the form below:</p>
+        <form action="/contact" method="post">
+            <label for="email">Email</label>
+            <input type="text" id="name" name="email">
+            <label for="subject">Subject:</label>
+            <input type="subject" id="subject" name="subject">
+            <label for="message">Message:</label>
+            <textarea required ="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
